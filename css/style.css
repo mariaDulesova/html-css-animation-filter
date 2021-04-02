@@ -116,3 +116,61 @@
     transform:scale(0.5,0.5);
 }
 
+/* Exercise 6 */
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+/* Exercise 7 */
+.ex-7-img{
+    transition: filter 1.5s;
+}
+
+.ex-7-img:hover{
+    filter: grayscale(100%) sepia(50%);
+}
+
+/* Exercise 8 */
+.ex-8-img {
+    transition: all 1.5s;
+}
+.ex-8-img:hover {
+    filter: sepia(65%);
+    border-radius: 30px;
+}
+
+/* Exercise 9 */
+.ex-9-img {
+    transition: all 2s;
+}
+
+.ex-9-img:hover{
+    filter: sepia(75%);
+    border-radius: 30px;
+    transform: scale(1.5,1.5);
+}
+
+/* Exercise 10 */
+.ex-10-icon {
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes circle {
+    0% { transform:rotate(0deg);} 
+    100% { transform:rotate(360deg);}
+}
+
+/* Exercise 11 */
+.ex-11-icon:hover {
+    animation-name: quartercircle;
+    animation-duration: 1s;
+    animation-timing-function: linear; 
+}
+@keyframes quartercircle {
+    0% { transform:rotate(0deg);} 
+    75% { transform:rotate(270deg);}
+}
